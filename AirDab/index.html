@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>VLC for iOS file uploader</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="jquery-1.10.1.min.js"></script>
+    <script src="jquery.knob.js"></script>
+    <script type="text/javascript" src="jquery.ui.widget.js"></script>
+    <script type="text/javascript" src="jquery.iframe-transporth.js"></script>
+    <script type="text/javascript" src="jquery.fileupload.js"></script>
+    
+    <script type="text/javascript" src="jquery.simpleplaylist.js"></script>
+  <script type="text/javascript" src="script.js"></script>   </head>
+
+  <body>
+      <div id="header"><div class="nav"><div class="logo">  <a href="http://www.radtwits.com"><img src="/LOGO.png" height="120" width="120" alt="" /></a> </div>
+          <div id="jukebox" class="jukebox">
+              <div class="info">AIR DAB</div>
+              <div class="loader">
+                  <div class="load-progress">
+                      <div class="play-progress">
+                      </div>
+                  </div>
+              </div>
+              <div class="controls">
+                  <a class="prev" href="#"><span>Prev</span></a>
+                  <a class="play" href="#"><span>Play</span></a>
+                  
+                                    <a class="next" href="#"><span>Next</span></a>
+              </div>
+              <audio class="aud">
+                  <p>Oops, looks like your browser doesn't support HTML 5 audio.</p>
+              </audio>
+          </div>
+
+          <form id="upload" method="post" action="upload.json" enctype="multipart/form-data">
+             
+              <div id="drop">
+                   <a>Browse</a>
+                  <input type="file" name="upl" multiple />
+              </div>
+              
+              <div  class="uploadr" id="uploadr">
+            
+                  <ul>
+                     
+                  </ul>
+                 
+                 
+              </div>
+          </form>
+          </div>
+           <div class="main" id="main">
+     
+<div id="playr" class="playr" >
+                       <div style="clear:both;">
+       <ul class="playlist">
+  
+      </ul>
+       </div>
+            </div>
+  <div style="clear:both;"/> 
+
+      <div id="footer">
+        <p>VLC for iOS is free, open-source software published by <a href="http://www.videolan.org" target="_blank">VideoLAN</a>. <br />Modification and redistribution is subject to both the <a href="http://opensource.org/licenses/GPL-2.0" target="_blank">GPLv2 (or later)</a> and the <a href="http://opensource.org/licenses/MPL-2.0" target="_blank">MPLv2</a> as well as further rights reserved by the VideoLAN association.<br />You can find the sources to this application <a href="http://git.videolan.org/?p=vlc-ports/ios.git;a=summary" target="_blank">online</a> and more information about licensing in the About dialog included within the app.</p>
+      </div>
+    </div>
+    
+  </body>
+ 
+
+  </html>
+
+
